@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.nav_menu {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background-image: url(/assets/images/hero.jpg) ;
+    height: 768px;
+    /*width: 263px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_content {
+    position: absolute;
+    width: 330px;
+    height: 171px;
+    left: calc(50% - 330px/2 - 0.5px);
+    top: 315px;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+.hero_content .new_product {
+    position: absolute;
+    width: 199px;
+    height: 65px;
+    left: calc(50% - 199px/2 - 1px);
+    top: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 33px;
+    /* or 110% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.hero_content .shop_link {
+    position: absolute;
+    width: 72px;
+    height: 32px;
+    left: calc(50% - 72px/2 - 1.5px);
+    top: 108px;
+    
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    /* or 206% */
+    
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: #000000;
+    
+}
