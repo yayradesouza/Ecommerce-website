@@ -1,16 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* the container is used to implement the dark overlay*/
+.container {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
 }
+
 .nav_menu {
-    position: absolute;
-    left: 100%;
-    width: 100%;
+    position:relative;
+    /*right: 200px;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#ffffff;
+    margin-left: 20px;
 }
 
 .hero {
@@ -69,4 +84,29 @@
     
     color: #000000;
     
+}
+
+.dsktop_mnu ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;add
+    color:#ffffff;
+}
+
+.dsktop_mnu li:not(:last-child) {
+    margin: 10px;
+}
+
+.dsktp_mnu {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+@media (max-width: 400px) {
+    .dsktop_mnu {
+        display:none;
+    }
 }
